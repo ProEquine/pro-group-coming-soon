@@ -1,71 +1,81 @@
-
 @font-face {
-    font-family: myFont;
-    src: url(../assets/Fonts/SANSATION-LIGHT.TTF);
-  }
+  font-family: myFont;
+  src: url(../assets/Fonts/SANSATION-LIGHT.TTF);
+}
 
-.main{
-    margin:auto ;
+.main {
+  margin: auto;
 }
-img{
-    position: relative;
-    width: 35%;
-    margin-bottom: 1rem;
+
+img {
+  position: relative;
+  width: 35%;
+  margin-bottom: 1rem;
 }
+
 h4 {
-    margin-top: 0.7rem;
-    color: #606060;
-    font-family: "myFont", sans-serif;
-    bottom: 12%;
-    position: absolute;
-    width: 100%;
-    text-align:center;
-    font-size: 1.5rem;
-    font-weight: 100;
-} 
+  margin-top: 0.7rem;
+  color: #606060;
+  font-family: "myFont", sans-serif;
+  bottom: 12%;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
 h5 {
   bottom: 30%;
   margin: auto;
-  margin-bottom:2rem 0;
+  margin-bottom: 2rem 0;
   color: #000000;
   font-family: "myFont", sans-serif;
   z-index: 1025;
   bottom: 5%;
   position: absolute;
   text-align: center;
-} 
-h5 a{
+}
+
+h5 a {
   color: #606060;
   text-decoration: none;
 }
-  .waviy {
-    position: absolute;
-    top: 40%;
-    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    width: 100%;
-    text-align:center;
-    letter-spacing: 10px;
+
+.waviy {
+  position: absolute;
+  top: 40%;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+.waviy span {
+  font-family: "myFont", sans-serif;
+  position: relative;
+  display: inline-block;
+  background: -webkit-linear-gradient(left, #84837e, #606060);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  animation: waviy 3s infinite;
+  animation-delay: calc(.1s * var(--i));
+
+}
+
+@keyframes waviy {
+
+  0%,
+  40%,
+  100% {
+    transform: translateY(0)
   }
-  .waviy span {
-    font-family: "myFont", sans-serif;
-    position: relative;
-    display: inline-block;
-    background: -webkit-linear-gradient(left, #84837e, #606060);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-    text-transform: uppercase;
-    animation: waviy 3s infinite;
-    animation-delay: calc(.1s * var(--i));
-    
+
+  20% {
+    transform: translateY(-20px)
   }
-  @keyframes waviy {
-    0%,40%,100% {
-      transform: translateY(0)
-    }
-    20% {
-      transform: translateY(-20px)
-    }
-  }
+}
